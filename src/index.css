@@ -3,6 +3,7 @@
 @theme {
     --animate-fade-up: fade-up 1s ease-in-out backwards;
     --animate-fade-right: fade-right .4s ease-in-out backwards;
+    --animate-rotate-in-place : rotate-in-place 7s infinite linear;
 
     @keyframes fade-up {
         0% {
@@ -26,5 +27,15 @@
             opacity: 1;
             margin-left: 0;
         }
+    }
+    
+    @keyframes rotate-in-place{
+        0%{
+            transform:rotateY(0deg);
+        }
+        100%{
+            transform:rotateY(360deg);
+        }
+
     }
 }
