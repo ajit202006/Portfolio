@@ -2,6 +2,7 @@
 
 @theme {
     --animate-fade-up: fade-up 1s ease-in-out backwards;
+    --animate-fade-right: fade-right .4s ease-in-out backwards;
 
     @keyframes fade-up {
         0% {
@@ -12,6 +13,18 @@
         100% {
             opacity: 1;
             margin-top: 0;
+        }
+    }
+
+    @keyframes fade-right {
+        0% {
+            opacity: 0;
+            margin-left: -10px;
+        }
+
+        100% {
+            opacity: 1;
+            margin-left: 0;
         }
     }
 }
