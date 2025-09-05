@@ -42,3 +42,6 @@
 .nav-btn{
     @apply absolute origin-[128px_18px] shadow-[0px_0px_4px_4px_rgba(255,255,255,0.25)]  bg-black rounded-full p-2.5;
 }
+.skill-li{
+    @apply w-40 h-40 rounded-full p-0.5 flex flex-col justify-center items-center;
+}
