@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { TiThMenu } from 'react-icons/ti'
 import { LuBrainCircuit } from 'react-icons/lu'
-import { IoClose, IoPerson } from 'react-icons/io5'
+import { IoClose, IoPerson, IoSchool } from 'react-icons/io5'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,17 +12,15 @@ const Navbar = () => {
                 onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? <IoClose /> : <TiThMenu />}
             </button>
-            <a href='#about' className={`${isOpen ? 'rotate-75 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`} onClick={() => setIsOpen(false)}>
-                    <IoPerson className='-rotate-75' />
+            <a href='#about' title='About' className={`${isOpen ? 'rotate-75 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`} onClick={() => setIsOpen(false)}>
+                <IoPerson className='-rotate-75' />
             </a>
-{/* className={`${isOpen ? 'rotate-75 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`} */}
-
-            <a href='#skills' onClick={() => setIsOpen(false)} className={`delay-25 ${isOpen ? 'rotate-45 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
-                <LuBrainCircuit className='-rotate-45'/>
+            <a href='#skills' title='Skills' onClick={() => setIsOpen(false)} className={`delay-25 ${isOpen ? 'rotate-45 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
+                <LuBrainCircuit className='-rotate-45' />
             </a>
-            <button onClick={() => setIsOpen(false)} className={`delay-50  ${isOpen ? 'rotate-15 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
-                <LuBrainCircuit />
-            </button>
+            <a href='#education' title='Education' onClick={() => setIsOpen(false)} className={`delay-50  ${isOpen ? 'rotate-15 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
+                <IoSchool className='-rotate-15' />
+            </a>
             <button onClick={() => setIsOpen(false)} className={`delay-75 ${isOpen ? '-rotate-15 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
                 <LuBrainCircuit />
             </button>
