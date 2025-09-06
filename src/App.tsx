@@ -1,6 +1,7 @@
 import About from "./sections/About"
 import Education from "./sections/Education"
 import Navbar from "./sections/Navbar"
+import Projects from "./sections/Projects"
 import Skills from "./sections/Skills"
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
         <section id="education" className="w-screen h-screen flex items-center justify-center">
           <Education />
         </section>
-        
-
+        <section id="projects" className="w-screen h-screen flex items-center justify-center">
+          <Projects />
+        </section>
       </div>
     </>
   )
