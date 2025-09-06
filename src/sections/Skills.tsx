@@ -13,31 +13,31 @@ const Skills = () => {
                     <span className='text-xl '>HTML</span>
                 </div>
                 <div className='skill-li'>
-                    <TbBrandCss3 className='text-8xl text-blue-500 animate-rotate-in-place' />
+                    <TbBrandCss3 className='text-8xl text-blue-500 animate-[rotate-in-place_2s_infinite_0.5s_linear] ' />
                     <span className='text-xl '>CSS</span>
                 </div>
                 <div className='skill-li'>
-                    <FaSquareJs className='text-8xl text-amber-400 animate-rotate-in-place' />
+                    <FaSquareJs className='text-8xl text-amber-400  animate-[rotate-in-place_2s_infinite_1s_linear]' />
                     <span className='text-xl '>Javascript</span>
                 </div>
                 <div className='skill-li'>
-                    <FaPython className='text-8xl animate-rotate-in-place' />
+                    <FaPython className='text-8xl animate-[rotate-in-place_2s_infinite_1.5s_linear]' />
                     <span className='text-xl '>Python</span>
                 </div>
                 <div className='skill-li'>
-                    <BiLogoMongodb className='text-8xl text-green-600 outline-4 outline-white rounded-full animate-rotate-in-place' />
+                    <BiLogoMongodb className='text-8xl text-green-600 outline-4 outline-white rounded-full animate-rotate-in-place ' />
                     <span className='text-xl '>MongoDB</span>
                 </div>
                 <div className='skill-li'>
-                    <SiExpress className='text-8xl text-black font-bold bg-white rounded-full animate-rotate-in-place' />
+                    <SiExpress className='text-8xl text-black font-bold bg-white rounded-full animate-[rotate-in-place_2s_infinite_0.5s_linear]' />
                     <span className='text-xl '>Express.js</span>
                 </div>
                 <div className='skill-li'>
-                    <FaReact className='text-8xl text-sky-400 animate-rotate-in-place' />
+                    <FaReact className='text-8xl text-sky-400  animate-[rotate-in-place_2s_infinite_1s_linear]' />
                     <span className='text-xl '>React</span>
                 </div>
                 <div className='skill-li'>
-                    <TbBrandNodejs className='text-8xl text-lime-700 animate-rotate-in-place' />
+                    <TbBrandNodejs className='text-8xl text-lime-700  animate-[rotate-in-place_2s_infinite_1.5s_linear]' />
                     <span className='text-xl '>Node.js</span>
                 </div>
             </div>
