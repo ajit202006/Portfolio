@@ -1,9 +1,12 @@
 @import 'tailwindcss';
-
+*{
+    font-family:sans-serif;
+}
 @theme {
     --animate-fade-up: fade-up 1s ease-in-out backwards;
     --animate-fade-right: fade-right .4s ease-in-out backwards;
-    --animate-rotate-in-place: rotate-in-place 3s infinite linear;
+    --animate-rotate-in-place: rotate-in-place 2s infinite linear;
+    --animate-beat : beat 1s infinite linear backwards;
     
     @keyframes fade-up {
         0% {
@@ -16,7 +19,6 @@
             margin-top: 0;
         }
     }
-
     @keyframes fade-right {
         0% {
             opacity: 0;
@@ -28,7 +30,6 @@
             margin-left: 0;
         }
     }
-    
     @keyframes rotate-in-place {
         0% {
             transform: rotateY(0deg);
@@ -41,7 +42,20 @@
         }
         
     }
-
+    @keyframes beat {
+        50% {
+            transform: scale(1);
+        }
+        60% {
+            transform: scale(1.1);
+        }
+        70% {
+            transform: scale(1);
+        }
+        80% {
+            transform: scale(1.1);
+        }
+    }
 }
 
 .nav-btn {
