@@ -1,4 +1,5 @@
 import About from "./sections/About"
+import Contact from "./sections/Contact"
 import Education from "./sections/Education"
 import Navbar from "./sections/Navbar"
 import Projects from "./sections/Projects"
@@ -21,6 +22,9 @@ function App() {
         </section>
         <section id="projects" className="w-screen h-screen flex items-center justify-center">
           <Projects />
+        </section>
+        <section id="contact" className="w-screen h-screen flex items-center justify-center">
+          <Contact />
         </section>
       </div>
     </>
