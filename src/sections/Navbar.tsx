@@ -3,6 +3,7 @@ import { TiThMenu } from 'react-icons/ti'
 import { LuBrainCircuit } from 'react-icons/lu'
 import { IoClose, IoPerson, IoSchool } from 'react-icons/io5'
 import { GoGoal } from "react-icons/go";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,25 +14,21 @@ const Navbar = () => {
                 onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? <IoClose /> : <TiThMenu />}
             </button>
-            <a href='#about' title='About' className={`${isOpen ? 'rotate-75 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`} onClick={() => setIsOpen(false)}>
-                <IoPerson className='-rotate-75' />
+            <a href='#about' title='About' className={`delay-50 ${isOpen ? 'rotate-70 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`} onClick={() => setIsOpen(false)}>
+                <IoPerson className='-rotate-70' />
             </a>
-            <a href='#skills' title='Skills' onClick={() => setIsOpen(false)} className={`delay-25 ${isOpen ? 'rotate-45 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
-                <LuBrainCircuit className='-rotate-45' />
+            <a href='#skills' title='Skills' onClick={() => setIsOpen(false)} className={`delay-25 ${isOpen ? 'rotate-35 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
+                <LuBrainCircuit className='-rotate-35' />
             </a>
-            <a href='#education' title='Education' onClick={() => setIsOpen(false)} className={`delay-50  ${isOpen ? 'rotate-15 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
-                <IoSchool className='-rotate-15' />
+            <a href='#education' title='Education' onClick={() => setIsOpen(false)} className={`${isOpen ? 'translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
+                <IoSchool/>
             </a>
-            <a  href='#projects' title='Projects' onClick={() => setIsOpen(false)} className={`delay-75 ${isOpen ? '-rotate-15 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
-                <GoGoal className='rotate-15'/>
+            <a href='#projects' title='Projects' onClick={() => setIsOpen(false)} className={`delay-25 ${isOpen ? '-rotate-35 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
+                <GoGoal className='rotate-35' />
             </a>
-            <button onClick={() => setIsOpen(false)} className={`delay-100 ${isOpen ? '-rotate-45 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
-                <LuBrainCircuit />
-            </button>
-            <button onClick={() => setIsOpen(false)} className={`delay-125 ${isOpen ? '-rotate-75 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
-                <LuBrainCircuit />
-            </button>
-
+            <a href='#contact' onClick={() => setIsOpen(false)} className={`delay-50 ${isOpen ? '-rotate-70 translate-x-3' : 'rotate-0 translate-x-36'} nav-btn`}>
+                <HiOutlineMail className='rotate-70'/>
+            </a>
         </div>
 
     )
