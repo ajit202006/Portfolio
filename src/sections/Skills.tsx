@@ -1,4 +1,4 @@
-import { FaSquareJs, FaPython, FaReact } from 'react-icons/fa6'
+import { FaSquareJs, FaReact } from 'react-icons/fa6'
 import { TbBrandHtml5, TbBrandCss3, TbBrandNodejs } from 'react-icons/tb';
 import { BiLogoMongodb } from 'react-icons/bi';
 import { SiExpress } from 'react-icons/si';
@@ -21,7 +21,7 @@ const Skills = () => {
                     <span className='text-xl '>Javascript</span>
                 </div>
                 <div className='skill-li'>
-                    <FaPython className='text-8xl animate-[rotate-in-place_2s_infinite_1.5s_linear]' />
+                    <img src='/python.png' className='text-8xl w-24 animate-[rotate-in-place_2s_infinite_1.5s_linear]' />
                     <span className='text-xl '>Python</span>
                 </div>
                 <div className='skill-li'>
