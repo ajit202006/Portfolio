@@ -1,7 +1,7 @@
 const About = () => {
     return (
         <div className='flex items-center flex-col lg:flex-row justify-center w-full h-full lg:w-4/5 lg:h-4/5 lg:shadow-[0px_0px_56px_5px_rgba(255,255,255,0.25)] lg:rounded-4xl'>
-            <div className='w-1/2 md:w-1/4 gap-2 h-full flex flex-col items-center justify-center'>
+            <div className='w-1/2 md:w-1/4 gap-2 md:h-full flex flex-col items-center justify-center'>
                 <img className='w-full rounded-full shadow-[0px_0px_4px_0px_rgba(255,255,255,0.25)]' src='/profile.png' alt='profile image' />
                 <a href='https://drive.google.com/file/d/1it12O-a69f01JpCV32g0opMQqO2VpOWO/view?usp=drive_link' className='p-1.5 font-bold rounded-md animate-beat text-xl w-auto bg-linear-45/shorter from-indigo-500 from-5% via-cyan-400 via-20%% to-emerald-300' target='_blank'>Download CV</a>
             </div>
