@@ -17,11 +17,11 @@ function App() {
         <section id="skills" className="w-screen h-screen flex items-center justify-center">
           <Skills />
         </section>
-        <section id="education" className="w-screen h-screen flex items-center justify-center">
-          <Education />
-        </section>
         <section id="projects" className="w-screen h-screen flex items-center justify-center">
           <Projects />
+        </section>
+        <section id="education" className="w-screen h-screen flex items-center justify-center">
+          <Education />
         </section>
         <section id="contact" className="w-screen h-screen flex items-center justify-center">
           <Contact />
