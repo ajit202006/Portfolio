@@ -13,8 +13,8 @@ const Navbar = () => {
             <ul className={`flex flex-col ${isOpen?'scale-100':'scale-0'} md:scale-100 transition-[scale] absolute left-15 *:w-20 *:bg-slate-900 *:text-center md:*:w-auto md:relative md:flex-row w-1/2 text-md lg:text-xl h-full justify-around items-center *:hover:bg-slate-800 md:*:py-1 md:*:px-6 md:*:rounded-full`}>
                 <li><a onClick={() => {setIsOpen(!isOpen)}} href='#about'>About</a></li>
                 <li><a onClick={() => {setIsOpen(!isOpen)}} href='#skills'>Skills</a></li>
-                <li><a onClick={() => {setIsOpen(!isOpen)}} href='#education'>Education</a></li>
                 <li><a onClick={() => {setIsOpen(!isOpen)}} href='#projects'>Projects</a></li>
+                <li><a onClick={() => {setIsOpen(!isOpen)}} href='#education'>Education</a></li>
                 <li><a onClick={() => {setIsOpen(!isOpen)}} href='#contact'>Contact</a></li>
             </ul>
         </div>
