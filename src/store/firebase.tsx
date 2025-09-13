@@ -1,7 +1,7 @@
 import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAKB9ITQk8vYBmDbTWn6uHZSp2jWV81nEY',
+  apiKey: 'EY',
   authDomain: 'portfolio-ajit-vishwakarma.firebaseapp.com',
   projectId: 'portfolio-ajit-vishwakarma',
   storageBucket: 'portfolio-ajit-vishwakarma.firebasestorage.app',
