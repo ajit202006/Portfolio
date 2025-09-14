@@ -1,6 +1,5 @@
 import { getDatabase, ref, set } from 'firebase/database';
 import firebaseApp from '../store/firebase';
-import { VscGithub } from 'react-icons/vsc';
 import { FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 import React, { useRef } from 'react';
@@ -43,10 +42,6 @@ const Contact = () => {
             <div className='w-full h-9/10 flex flex-col gap-y-7 md:flex-row justify-around items-center overflow-y-auto [&::-webkit-scrollbar]:hidden'>
                 <div className='w-4/5 md:w-2/5 h-full flex flex-col items-center justify-center gap-7 *:flex *:flex-col md:*:flex-row *:items-center *:gap-2 *:text-xl md:*:text-2xl *:hover:*:underline'>
                     <p>You can see my work and connect with me on the following patterns :</p>
-                    <a href='https://github.com/ajit202006/' target='_blank'>
-                        <VscGithub className='text-3xl' />
-                        <span>My Github</span>
-                    </a>
                     <a href='https://www.linkedin.com/in/ajit-vishwa-karma/' target='_blank'>
                         <FaLinkedin className='text-3xl' />
                         <span>My Linkedin</span>
@@ -57,15 +52,15 @@ const Contact = () => {
                     </a>
                 </div>
                 <hr className='md:hidden w-full' />
-                <form onSubmit={(e) => { sendData(e) }} className='w-4/5 md:w-2/5 h-full flex flex-col items-center justify-center gap-y-2 text-xl'>
-                    <h3 className='text-2xl font-bold mb-2'>Message me here :</h3>
+                <form onSubmit={(e) => { sendData(e) }} className='w-4/5 md:w-2/5 h-full flex flex-col items-center justify-center gap-y-2 text-xl *:w-4/5'>
+                    <h3 className='text-2xl text-center font-bold mb-2'>Message me here :</h3>
                     <label htmlFor='name'>Your Name :</label>
-                    <input ref={nameRef} className='bg-slate-500 outline-0 py-1 px-1 rounded-lg w-4/5' type='text' id='name' placeholder='Enter your name...' autoComplete='off'/>
+                    <input ref={nameRef} className='bg-slate-500 outline-0 py-1 px-1 rounded-lg' type='text' id='name' placeholder='Enter your name...' autoComplete='off'/>
                     <label htmlFor='e-mail'>Your Email :</label>
-                    <input ref={emailRef} className='bg-slate-500 outline-0 py-1 px-1 rounded-lg w-4/5' type='email' id='e-mail' placeholder='Enter your email...' autoComplete='off'/>
+                    <input ref={emailRef} className='bg-slate-500 outline-0 py-1 px-1 rounded-lg' type='email' id='e-mail' placeholder='Enter your email...' autoComplete='off'/>
                     <label htmlFor='message'>Your message :</label>
-                    <textarea ref={messageRef} className='resize-none outline-0 bg-slate-500 py-1 px-1 rounded-lg w-4/5' id='message' placeholder='Enter your message...'></textarea>
-                    <input className='bg-slate-700 outline-0 hover:bg-slate-600 active:bg-slate-900 py-1 px-1.5 rounded-full' type='submit' />
+                    <textarea ref={messageRef} className='resize-none outline-0 bg-slate-500 py-1 px-1 rounded-lg' id='message' placeholder='Enter your message...'></textarea>
+                    <input className='bg-slate-700 outline-0 hover:bg-slate-600 active:bg-slate-900 rounded-full' type='submit' />
                 </form>
             </div>
         </div>
